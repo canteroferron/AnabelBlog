@@ -31,7 +31,7 @@ CREATE TABLE `wp_postmeta` (
   `meta_value` longtext,
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
-  KEY `meta_key` (`meta_key`)
+  KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=1390 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-09-25 19:13:16
+-- Dump completed on 2016-09-25 21:39:15

@@ -30,6 +30,9 @@ src/wp-signup.php
 src/wp-trackback.php
 src/xmlrpc.php
 
+.buildpath
+.project
+
 
 # Hidden files
 *.DS_Store

@@ -27,19 +27,20 @@ DROP TABLE IF EXISTS `wp_users`;
 CREATE TABLE `wp_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) NOT NULL DEFAULT '',
-  `user_pass` varchar(64) NOT NULL DEFAULT '',
+  `user_pass` varchar(255) NOT NULL DEFAULT '',
   `user_nicename` varchar(50) NOT NULL DEFAULT '',
   `user_email` varchar(100) NOT NULL DEFAULT '',
   `user_url` varchar(100) NOT NULL DEFAULT '',
   `user_registered` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `user_activation_key` varchar(60) NOT NULL DEFAULT '',
+  `user_activation_key` varchar(255) NOT NULL DEFAULT '',
   `user_status` int(11) NOT NULL DEFAULT '0',
   `display_name` varchar(250) NOT NULL DEFAULT '',
   `spam` tinyint(2) NOT NULL DEFAULT '0',
   `deleted` tinyint(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
-  KEY `user_nicename` (`user_nicename`)
+  KEY `user_nicename` (`user_nicename`),
+  KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -62,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-09-25 19:13:21
+-- Dump completed on 2016-09-25 21:39:21
