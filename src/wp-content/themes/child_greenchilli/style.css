@@ -1,0 +1,122 @@
+/*
+
+   Theme Name: Child Greenchilli
+
+   Description: Child Theme. Parent Theme Greenchilli
+
+   Author: Jesús Cantero Ferrón
+
+   Template: greenchilli
+
+   Version: 0.1
+
+*/
+
+@import url("../greenchilli/style.css");
+
+
+.logoAndSubtitleContent {
+	
+}
+
+.logoContent {
+	z-index: 2;
+}
+
+.subtitleContent {
+    z-index: 1;
+    margin: 30px 0 0;	
+}
+
+.subtitle {
+	font-size: 14px;
+	/*color: #d6c431;*/
+	line-height: 1.75px; 
+	margin: 0 0 1em;
+	text-align: right;
+}
+
+.articleInPage {
+    width: 95%;
+    padding-left: 20px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.article img.aligncenter, .article img.alignnone {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.featured-thumbnail {
+    border: 0.4em solid #ccc;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1100px;
+}
+
+#page, .container {
+    max-width: 1100px;
+    min-width: 240px;
+    overflow: visible;
+}
+
+#navigation ul {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+body > footer .footeText {
+    width: 1100px;
+    margin: 22px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 0 0 0 0%;
+    overflow: hidden;
+}
+
+.footer-w-container, #copyright-note {
+    width: 1060px;
+    margin: 0 auto;
+    clear: both;
+    max-width: 100%;
+}
+
+.secondary-navigation {
+    display: block;
+    margin: 0 auto;
+    max-width: 1102px;
+    width: 100%;
+}
+
+
+.article img.aligncenter, .article img.alignnone {
+	display: inline
+}
+
+.widget li {
+    background: #FFFFFF;
+    display: block;
+    list-style-type: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-left: 18px;
+}
+
+.home_post_container_child { 
+}
